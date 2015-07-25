@@ -1,5 +1,13 @@
 'use strict';
 
 app.home = kendo.observable({
-    onShow: function() {alert("hi");}
+    InputCampusPin: "Test",
+    
+    
+    
+    
+    onShow: function() {},
+    OnLoginClick: function()
+    {alert(app.home.InputCampusPin)
+    }
 });

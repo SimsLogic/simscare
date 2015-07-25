@@ -9,26 +9,35 @@
     <body>
          
         <div data-role="view" data-title="Home" data-layout="login" data-model="app.home" data-show="app.home.onShow">
-            
-           <div class="row" >
-            <div class="col-xs-1 col-sm-4 col-md-4 col-lg-4"></div>
+         
+        <!--  <div class="row" >-->
+            <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4"></div>
           
-               <div class=" col-xs-10 col-sm-4 col-md-4 col-lg-4">
+               <div class=" col-xs-6 col-sm-6 col-md-4 col-lg-4">
                 
-                <input type="text" class="form-control text-center" placeholder="Campus PIN Code">                   
-                <button id="btnlogin" type="button" class="btn btn-primary">Login</button>
-            </div><!-- /.col-lg-4 -->
+                <input id="CampusPin" type="text" class="form-control text-center " data-bind="value: InputCampusPin" placeholder="Campus PIN Code">                   
+                <button id="btnlogin" type="button" class="btn btn-primary" data-bind="click: OnLoginClick">Login</button>
+                 </div>
+                     
+                     
+                 </div>
            
-               <div class="col-xs-1 col-sm-4 col-md-4 col-lg-4"></div>
-        </div><!-- /.row -->
-</div>
-<style>
-</style>
+               <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4"></div>
+       
+         <!-- </div> -->
 
-        
-        
-        
-        
+            
+
+<style>
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+</style>
+  
     </body>
 </html>
 
