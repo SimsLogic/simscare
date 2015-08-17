@@ -1,13 +1,16 @@
 'use strict';
 
+
 app.home = kendo.observable({
-    InputCampusPin: "Test",
-    
-    
-    
-    
+    InputCampusPin: "",
+    InputCampusPinRequired:"Campus Pin required",
+   
     onShow: function() {},
     OnLoginClick: function()
-    {alert(app.home.InputCampusPin)
+    {
+      
+                alert(app.home.InputCampusPin)
+            
+             
     }
 });

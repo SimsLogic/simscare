@@ -12,13 +12,13 @@
          
         <!--  <div class="row" >-->
             <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4"></div>
-          
+          <div id="loginform">
                <div class=" col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                
-                <input id="CampusPin" type="text" class="form-control text-center " data-bind="value: InputCampusPin" placeholder="Campus PIN Code">                   
+                <input id="CampusPin" type="text" class="form-control text-center " required  data-bind="value: InputCampusPin,attr: {validationMessage: InputCampusPinRequired}"  placeholder="Campus PIN Code" required  >                   
                 <button id="btnlogin" type="button" class="btn btn-primary" data-bind="click: OnLoginClick">Login</button>
-                 </div>
-                     
+                <span class="k-invalid-msg" data-for="CampusPin"></span>
+                   </div>
+                </div>     
                      
                  </div>
            
