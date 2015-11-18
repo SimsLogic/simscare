@@ -4,39 +4,101 @@
 
 <html>
     <head>
-        <title></title>
+          <title>Bootstrap Example</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
     <body>
-         
-        <div data-role="view" data-title="Home" data-layout="login" data-model="app.home" data-show="app.home.onShow">
-         
-        <!--  <div class="row" >-->
-            <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4"></div>
-          <div id="loginform">
-               <div class=" col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <input id="CampusPin" type="text" class="form-control text-center " required  data-bind="value: InputCampusPin,attr: {validationMessage: InputCampusPinRequired}"  placeholder="Campus PIN Code" required  >                   
-                <button id="btnlogin" type="button" class="btn btn-primary" data-bind="click: OnLoginClick">Login</button>
-                <span class="k-invalid-msg" data-for="CampusPin"></span>
-                   </div>
-                </div>     
-                     
-                 </div>
-           
-               <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4"></div>
-       
-         <!-- </div> -->
+        <div class="container vertical-center">
 
+          <form role="form" class="formCenters">
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control cls-radius" id="email" placeholder="Enter email">
+              </div>
+      
+              <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control cls-radius" id="pwd" placeholder="Enter password">
+              </div>
+      
+              <div class="checkbox">
+                  <!--<label><input type="checkbox"> Remember me</label>-->
+                  <label id="ValidationMsg"></label>
+              </div>
+             <button type="submit" class="btn btn-default" onclick="myFunction()"><a href="home/Dashboard.html">Login</a></button>
+          </form>
+      
             
-
-<style>
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
-}
-</style>
+        </div>
+        
+        <script>
+        function myFunction() {
+            
+         //   $(location).attr('href', 'home/Dashboard.html')
+         //   window.location.replace("home/Dashboard.html");
+         //   document.write('<a href="home/Dashboard.html">do stuff</a>');
+         //   window.open("home/Dashboard.html");
+         //   location.href='home/Dashboard.html';
+         //   $.ajax({
+         //       url: 'http://www.simslogic.com/Alpha/c1h2e3c5k6a7u8t7h7e9n0t0i9c0a9t5io3n5p4ina3n4dd5o1m2a5i6n7su4f5i6x?DomainSufix=' + $('#email').val() + '&LocationPinCode=' + $('#pwd').val() +'',
+         //       data: '{DomainSufix:"' + $('#pwd').val() + '",LocationPinCode:"' + $('#email').val() + '"}',
+         //       type: 'GET',
+         //       contentType: 'application/json;',
+         //       dataType: 'json',
+         //       success: function (result) {
+         //             alert(result);
+         //       }
+         //   });
+                 
+             //window.open("http://www.w3schools.com");
+        }
+        </script>
+        
+        <style>
+           .vertical-center {
+                min-height: 99%;  /* Fallback for browsers do NOT support vh unit */
+                min-height: 99vh; /* These two lines are counted as one :-)       */
+                display: flex;
+                align-items: center;
+               }
+            .formCenters{
+                
+                /*margin-left:30%;
+                margin-right:20%;*/
+                
+                margin:auto;
+                align-items: center;
+            }
+            
+            body{
+                background-color:#d3dfe5;
+            }
+            
+            .cls-radius{
+                border-radius: 20px;
+                 
+            }
+            
+            .loginBtndesign{
+                background: rgba(255, 255, 255, 0) none repeat scroll 0 0;
+                border: 0 none;
+                cursor: pointer;
+                font-size: 1px;
+                height: 100%;
+                left: 0;
+                opacity: 0.1;
+                position: absolute;
+                text-indent: -9999px;
+                top: 0;
+                width: 100%;
+            }
+            
+           
+        </style>
   
     </body>
 </html>
