@@ -16,63 +16,52 @@
         <div class="container">
             <div class="row LoginStyle">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                Login
+                <div class="img-reponsive header-img" >
+                  <a href="/home/Dashboard.html"><img src="/StudentImg/JunaidImg.png" class="pull-left"></a>  
+                    
+                </div>
               </div>
-            </div>            
-            <div class="vertical-center">
-              <form role="form" class="formCenters">
-                  <div class="form-group">
-                      <img id="LoginId" src="/SchoolLogoImg/LoginLogo.png" class="schoolLogo center-block">
-                  </div>    
-                  <div class="form-group">
-                      <input type="email" class="form-control cls-radius" id="email" placeholder="Enter email">
-                  </div>
-      
-                  <div class="form-group">
-                      <input type="password" class="form-control cls-radius" id="pwd" placeholder="Enter password">
-                  </div>
-                  <a class="btn btnsDesignColor" href="/home/Dashboard.html"><div style="color:#ffffff">Login</div></a>
-                     <!--<button type="submit" class="btn btnsDesignColor" onclick="myFunction()"><a href="home/Dashboard.html">Login</a></button>-->
-              </form>
             </div>
+              
+                
+        </div>
+        <div class ="container">
+           <div class ="jumbotron header1">
+              <p> </p>
+           </div>
+        </div>         
+              
+        
+        <div class ="container">
+           <div class ="jumbotron header1">
+              <p> </p>
+           </div>
         </div>
         
-        <script>
-        function myFunction() {
-            
-         //   $(location).attr('href', 'home/Dashboard.html')
-         //   window.location.replace("home/Dashboard.html");
-         //   document.write('<a href="home/Dashboard.html">do stuff</a>');
-         //   window.open("home/Dashboard.html");
-         //   location.href='home/Dashboard.html';
-         //   $.ajax({
-         //       url: 'http://www.simslogic.com/Alpha/c1h2e3c5k6a7u8t7h7e9n0t0i9c0a9t5io3n5p4ina3n4dd5o1m2a5i6n7su4f5i6x?DomainSufix=' + $('#email').val() + '&LocationPinCode=' + $('#pwd').val() +'',
-         //       data: '{DomainSufix:"' + $('#pwd').val() + '",LocationPinCode:"' + $('#email').val() + '"}',
-         //       type: 'GET',
-         //       contentType: 'application/json;',
-         //       dataType: 'json',
-         //       success: function (result) {
-         //             alert(result);
-         //       }
-         //   });
-                 
-             //window.open("http://www.w3schools.com");
-        }
-        </script>
+        
+        <div class ="container">
+           <div class ="jumbotron header1">
+              <p> </p>
+           </div>
+        </div>
         
         <style>
+            
+            body{
+                background-color:#eeeeee;
+            }            
+            
            .vertical-center {
                 min-height: 90%;  /* Fallback for browsers do NOT support vh unit */
                 min-height: 90vh; /* These two lines are counted as one :-)       */
                 display: flex;
                 align-items: center;
-               }
+            }
+            
             .formCenters{
                 margin:auto;
                 align-items: center;
             }
-            
-
             
             .loginBtndesign{
                 background: rgba(255, 255, 255, 0) none repeat scroll 0 0;
@@ -89,10 +78,10 @@
             }
             
             .LoginStyle{
-                background-color: white;
+                background-color: #5bb22a;
                 font-size:15pt;
                 text-align:center;
-                padding:10px;
+                padding:32px;
                 height:10%;
                 color:#6eb449;
                 box-shadow: 0px 0px 1px #dadcd8;
@@ -116,7 +105,48 @@
                width: 55%; 
                height: 150px;  
                overflow: visible;
-            }             
+            }      
+            
+            
+                    .header1{
+                        
+                        height:10%;
+                        margin-top:3px;
+                         box-shadow:2px;
+                        border:1px solid #ccc;
+                        background:#fff;
+                        margin-bottom:10px;
+                      
+                            -moz-box-shadow: 2px 2px 1px #888;
+                        -webkit-box-shadow: 2px 2px 1px #888;
+                           box-shadow: 2px 2px 1px #888;
+                               
+                        
+                    }
+           .header1:hover{
+               
+                            -moz-box-shadow: 5px 5px 2px #888;
+                        -webkit-box-shadow: 5px 5px 2px #888;
+                           box-shadow: 5px 5px 2px #888;
+                               
+           }
+            
+            .header-img{
+                
+                  
+                
+                
+            }
+            
+            
+           .img:hover{
+               
+                -moz-box-shadow: 1px 1px 1px #888;
+                        -webkit-box-shadow: 1px 1px 1px #888;
+                           box-shadow: 1px 1px 1px #888;
+               
+               
+           }
         </style>
   
     </body>
